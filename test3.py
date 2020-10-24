@@ -3,7 +3,7 @@
 from array import *
 
 print('Input array of integer')
-# ввод чисел через пробел
+# ввод чисел через пробел, например 1 2 34 5 6 9 12
 x = input().split()
 
 for i in range(len(x)):
