@@ -1,13 +1,16 @@
 # Составить алгоритм: на входе есть числовой массив,
 # необходимо вывести элементы массива кратные 3
-from array import *
+a = []
+print('Введите количество элементов массива')
+n = int(input())
+print('Введите элементы массива, после ввода каждого числа нажмите Enter')
+for i in range(n):
+    new_el = int(input())
+    a.append(new_el)
 
-print('Input array of integer')
-# ввод чисел через пробел, например 1 2 34 5 6 9 12
-x = input().split()
+print('Следующие элементы массива делятся на 3 без остатка:')
 
-for i in range(len(x)):
-    x[i] = int(x[i])
-    if x[i] % 3 == 0:
-        print(x[i])
-input() 
+for i in range(n):
+    if a[i] % 3 == 0:
+        print(a[i])
+input()
